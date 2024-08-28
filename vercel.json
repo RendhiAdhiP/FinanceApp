@@ -1,100 +1,29 @@
 {
-    "rewrites": [
-        {
-            "source": "/",
-            "destination": "/views/auth/Login/Index.vue"
-        },
-        {
-            "source": "/register",
-            "destination": "/views/auth/Register/Index.vue"
-        },
-        {
-            "source": "/register/onboarding",
-            "destination": "/views/auth/Register/Onboarding/Index.vue"
-        },
-        {
-            "source": "/register/email",
-            "destination": "/views/auth/Login/Email/Index.vue"
-        },
-        {
-            "source": "/register/email/verify",
-            "destination": "/views/auth/Login/Email/Verified.vue"
-        },
-        {
-            "source": "/reset-password",
-            "destination": "/views/auth/Login/Email/ResetPssword.vue"
-        },
-        {
-            "source": "/reset-password/success",
-            "destination": "/views/auth/Login/Email/SuccessResetPassword.vue"
-        },
-        {
-            "source": "/dashboard",
-            "destination": "/views/pages/Dashboard/Index.vue"
-        },
-        {
-            "source": "/sending-money/amount",
-            "destination": "/views/pages/Dashboard/SendingMoney/Amount.vue"
-        },
-        {
-            "source": "/sending-money/personal-details",
-            "destination": "/views/pages/Dashboard/SendingMoney/PersonalDetails.vue"
-        },
-        {
-            "source": "/sending-money/recipient",
-            "destination": "/views/pages/Dashboard/SendingMoney/Recipient.vue"
-        },
-        {
-            "source": "/sending-money/review-and-pay",
-            "destination": "/views/pages/Dashboard/SendingMoney/ReviewAndPay.vue"
-        },
-        {
-            "source": "/sending-money/success",
-            "destination": "/views/pages/Dashboard/SendingMoney/Success.vue"
-        },
-        {
-            "source": "/balance",
-            "destination": "/views/pages/Balance/Index.vue"
-        },
-        {
-            "source": "/transactions",
-            "destination": "/views/pages/Transaction/Index.vue"
-        },
-        {
-            "source": "/cards",
-            "destination": "/views/pages/Cards/Index.vue"
-        },
-        {
-            "source": "/cards/add-card/onboarding",
-            "destination": "/views/pages/Cards/GettingPhysicalCards/Onboarding.vue"
-        },
-        {
-            "source": "/cards/add-card/address",
-            "destination": "/views/pages/Cards/GettingPhysicalCards/Address.vue"
-        },
-        {
-            "source": "/cards/add-card/verification",
-            "destination": "/views/pages/Cards/GettingPhysicalCards/VerificationCard.vue"
-        },
-        {
-            "source": "/cards/add-card/payment",
-            "destination": "/views/pages/Cards/GettingPhysicalCards/Payment.vue"
-        },
-        {
-            "source": "/cards/add-card/success",
-            "destination": "/views/pages/Cards/GettingPhysicalCards/SuccessAddCard.vue"
-        },
-        {
-            "source": "/recepients",
-            "destination": "/views/pages/Recepients/Index.vue"
-        },
-        {
-            "source": "/integrations",
-            "destination": "/views/pages/Integrations/Index.vue"
-        },
-        {
-            "source": "/settings",
-            "destination": "/views/pages/Settings/Index.vue"
-        }
+    "routes": [
+      { "src": "/", "dest": "/views/auth/Login/Index.vue" },
+      { "src": "/register", "dest": "/views/auth/Register/Index.vue" },
+      { "src": "/register/onboarding", "dest": "/views/auth/Register/Onboarding/Index.vue" },
+      { "src": "/register/email", "dest": "/views/auth/Login/Email/Index.vue" },
+      { "src": "/register/email/verify", "dest": "/views/auth/Login/Email/Verified.vue" },
+      { "src": "/reset-password", "dest": "/views/auth/Login/Email/ResetPssword.vue" },
+      { "src": "/reset-password/success", "dest": "/views/auth/Login/Email/SuccessResetPassword.vue" },
+      { "src": "/dashboard", "dest": "/views/pages/Dashboard/Index.vue" },
+      { "src": "/sending-money/amount", "dest": "/views/pages/Dashboard/SendingMoney/Amount.vue" },
+      { "src": "/sending-money/personal-details", "dest": "/views/pages/Dashboard/SendingMoney/PersonalDetails.vue" },
+      { "src": "/sending-money/recipient", "dest": "/views/pages/Dashboard/SendingMoney/Recipient.vue" },
+      { "src": "/sending-money/review-and-pay", "dest": "/views/pages/Dashboard/SendingMoney/ReviewAndPay.vue" },
+      { "src": "/sending-money/success", "dest": "/views/pages/Dashboard/SendingMoney/Success.vue" },
+      { "src": "/balance", "dest": "/views/pages/Balance/Index.vue" },
+      { "src": "/transactions", "dest": "/views/pages/Transaction/Index.vue" },
+      { "src": "/cards", "dest": "/views/pages/Cards/Index.vue" },
+      { "src": "/cards/add-card/onboarding", "dest": "/views/pages/Cards/GettingPhysicalCards/Onboarding.vue" },
+      { "src": "/cards/add-card/address", "dest": "/views/pages/Cards/GettingPhysicalCards/Address.vue" },
+      { "src": "/cards/add-card/verification", "dest": "/views/pages/Cards/GettingPhysicalCards/VerificationCard.vue" },
+      { "src": "/cards/add-card/payment", "dest": "/views/pages/Cards/GettingPhysicalCards/Payment.vue" },
+      { "src": "/cards/add-card/success", "dest": "/views/pages/Cards/GettingPhysicalCards/SuccessAddCard.vue" },
+      { "src": "/recepients", "dest": "/views/pages/Recepients/Index.vue" },
+      { "src": "/integrations", "dest": "/views/pages/Integrations/Index.vue" },
+      { "src": "/settings", "dest": "/views/pages/Settings/Index.vue" }
     ]
-}
+  }
+  
