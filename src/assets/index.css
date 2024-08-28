@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        /* --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%; */
+
+        --background: #210, 28.57%, 97.25%;
+        --foreground: 0 0% 3.9%;
+
+        --muted: 0 0% 96.1%;
+        --muted-foreground: 0 0% 45.1%;
+
+        --popover: 0 0% 100%;
+        --popover-foreground: 0 0% 3.9%;
+
+        --card: 0 0% 100%;
+        --card-foreground: 0 0% 3.9%;
+
+        --border: 0 0% 89.8%;
+        --input: 0 0% 89.8%;
+
+        --primary: 0 0% 9%;
+        --primary-foreground: 0 0% 98%;
+
+        --secondary: 0 0% 96.1%;
+        --secondary-foreground: 0 0% 9%;
+
+        --accent: 0 0% 96.1%;
+        --accent-foreground: 0 0% 9%;
+
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+
+        --ring: 0 0% 3.9%;
+
+        --radius: 0.5rem;
+    }
+
+    .dark {
+        --background: 0 0% 3.9%;
+        --foreground: 0 0% 98%;
+
+        --muted: 0 0% 14.9%;
+        --muted-foreground: 0 0% 63.9%;
+
+        --popover: 0 0% 3.9%;
+        --popover-foreground: 0 0% 98%;
+
+        --card: 0 0% 3.9%;
+        --card-foreground: 0 0% 98%;
+
+        --border: 0 0% 14.9%;
+        --input: 0 0% 14.9%;
+
+        --primary: 0 0% 98%;
+        --primary-foreground: 0 0% 9%;
+
+        --secondary: 0 0% 14.9%;
+        --secondary-foreground: 0 0% 98%;
+
+        --accent: 0 0% 14.9%;
+        --accent-foreground: 0 0% 98%;
+
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 98%;
+
+        --ring: 0 0% 83.1%;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+        @apply font-poppins;
+    }
+
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number']::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+@layer utilities {
+    .form-style {
+        @apply flex h-auto w-[310px] flex-col gap-4 rounded-2xl border border-solid border-[#DFE1E7] p-6 px-7 shadow-md drop-shadow-lg md:w-[370px] md:gap-6 lg:w-[420px];
+    }
+    .flex-between-center {
+        @apply flex items-center justify-between;
+    }
+
+    .container-content {
+        @apply container flex max-h-[4800px] flex-col content-around justify-between gap-20 overflow-x-hidden px-3 py-6 xs:min-h-screen sm:px-12 md:min-h-screen;
+    }
+
+    .nav-xs {
+        @apply rounded-md border border-solid border-custom-greyscale-500 px-3 py-2 text-xs font-semibold no-underline;
+    }
+
+    .nav-sm {
+        @apply border-none text-sm underline;
+    }
+
+    .circle {
+        @apply h-1 w-1 rounded-full bg-custom-greyscale-900;
+    }
+
+    .circle2 {
+        @apply h-1 w-1 rounded-full bg-custom-greyscale-0;
+    }
+
+    .user__custom {
+        @apply border border-[#DFE1E7] bg-gradient-to-b from-[#ECEFF3] to-transparent;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+        /* @apply w-[8px] h-[2px]  */
+        @apply hidden;
+    }
+
+    /* .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-[#888] rounded-[10px]
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-[#555]
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-[#f1f1f1]
+  } */
+    /* .nav-md{
+    @apply 
+  } */
+}
