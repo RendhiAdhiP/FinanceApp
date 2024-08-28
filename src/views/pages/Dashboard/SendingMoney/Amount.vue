@@ -286,7 +286,7 @@
                     <div class="h-[1px] w-full rounded-full bg-[#DFE1E7]"></div>
                     <div class="flex gap-4">
                         <div class="h-12 w-12">
-                            <img src="../../../assets/Icon/Avatar/05.png" class="w-full" alt="" />
+                            <img :src="avatars[4].avatar" class="w-full" alt="" />
                         </div>
                         <div class="flex w-full flex-col">
                             <span class="text-sm font-normal">You Send</span>
@@ -331,7 +331,7 @@
 import { useForm } from 'vee-validate'
 import { toTypedSchema } from '@vee-validate/zod'
 import * as z from 'zod'
-
+import { avatars } from '@/lib/data'
 import { Button } from '@/components/ui/button'
 import {
     FormControl,

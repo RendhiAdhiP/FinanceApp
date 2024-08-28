@@ -164,7 +164,7 @@
                         'relative right-2 h-8 w-8 lg:right-0':
                             !sidebarExpanded,
                     }">
-                        <img src="../../assets/Icon/Avatar/24.png" class="w-full" alt="" />
+                        <img src="@/assets/Icon/Avatar/24.png" class="w-full" alt="" />
                     </div>
                     <RouterLink to="/settings" v-show="sidebarExpanded" class="flex flex-col">
                         <h5 class="text-sm font-semibold">Alexander</h5>
