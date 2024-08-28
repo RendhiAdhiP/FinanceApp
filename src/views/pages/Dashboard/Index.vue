@@ -23,7 +23,7 @@ import {
 import { Platform } from '@/lib/data'
 import DashboardLayout from '@/Layouts/DashboardLayout.vue'
 import HeaderDashboard from '@/components/dashboard/HeaderDashboard.vue'
-
+import art from '@/assets/Icon/art.png'
 
 const options = ref({
     chart: {
@@ -702,7 +702,7 @@ function createBarChart(numBars, container, customRadius) {
                                 </clipPath>
                             </defs>
                         </svg>
-                        <img src="../../assets/Icon/art.png" class="relative h-24 md:h-32" alt="" />
+                        <img :src="art" class="relative h-24 md:h-32" alt="" />
                     </div>
                     <div class="absolute bottom-2 left-4 w-full">
                         <div class="flex items-center gap-16">
