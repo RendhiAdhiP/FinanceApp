@@ -1,29 +1,6 @@
 {
-    "routes": [
-      { "src": "/", "dest": "/views/auth/Login/Index.vue" },
-      { "src": "/register", "dest": "/views/auth/Register/Index.vue" },
-      { "src": "/register/onboarding", "dest": "/views/auth/Register/Onboarding/Index.vue" },
-      { "src": "/register/email", "dest": "/views/auth/Login/Email/Index.vue" },
-      { "src": "/register/email/verify", "dest": "/views/auth/Login/Email/Verified.vue" },
-      { "src": "/reset-password", "dest": "/views/auth/Login/Email/ResetPssword.vue" },
-      { "src": "/reset-password/success", "dest": "/views/auth/Login/Email/SuccessResetPassword.vue" },
-      { "src": "/dashboard", "dest": "/views/pages/Dashboard/Index.vue" },
-      { "src": "/sending-money/amount", "dest": "/views/pages/Dashboard/SendingMoney/Amount.vue" },
-      { "src": "/sending-money/personal-details", "dest": "/views/pages/Dashboard/SendingMoney/PersonalDetails.vue" },
-      { "src": "/sending-money/recipient", "dest": "/views/pages/Dashboard/SendingMoney/Recipient.vue" },
-      { "src": "/sending-money/review-and-pay", "dest": "/views/pages/Dashboard/SendingMoney/ReviewAndPay.vue" },
-      { "src": "/sending-money/success", "dest": "/views/pages/Dashboard/SendingMoney/Success.vue" },
-      { "src": "/balance", "dest": "/views/pages/Balance/Index.vue" },
-      { "src": "/transactions", "dest": "/views/pages/Transaction/Index.vue" },
-      { "src": "/cards", "dest": "/views/pages/Cards/Index.vue" },
-      { "src": "/cards/add-card/onboarding", "dest": "/views/pages/Cards/GettingPhysicalCards/Onboarding.vue" },
-      { "src": "/cards/add-card/address", "dest": "/views/pages/Cards/GettingPhysicalCards/Address.vue" },
-      { "src": "/cards/add-card/verification", "dest": "/views/pages/Cards/GettingPhysicalCards/VerificationCard.vue" },
-      { "src": "/cards/add-card/payment", "dest": "/views/pages/Cards/GettingPhysicalCards/Payment.vue" },
-      { "src": "/cards/add-card/success", "dest": "/views/pages/Cards/GettingPhysicalCards/SuccessAddCard.vue" },
-      { "src": "/recepients", "dest": "/views/pages/Recepients/Index.vue" },
-      { "src": "/integrations", "dest": "/views/pages/Integrations/Index.vue" },
-      { "src": "/settings", "dest": "/views/pages/Settings/Index.vue" }
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/"}
     ]
   }
   
